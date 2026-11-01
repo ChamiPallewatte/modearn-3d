@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5" />
+  <title>ME DO RE — Luxury Towers Dubai | Buy Office Spaces & Apartments</title>
+  <meta name="description" content="Experience smart luxury living at ME DO RE Towers, JLT Dubai. Modern residences, sky penthouses, and premier executive offices with panoramic lake & marina views." />
+  <link rel="icon" type="image/svg+xml" href="public/images/logo-icon.svg" />
+
+  <!-- Google Fonts: Cormorant Garamond & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="prologue-active">
+
+  <!-- ============================================================ -->
+  <!-- PRE-HOMEPAGE STEP-BY-STEP PROLOGUE EXPERIENCE                -->
+  <!-- Step 1: First View (Dubai Palm 3D)                           -->
+  <!-- Step 2: Second View (JLT Lake Cluster Zoom)                  -->
+  <!-- Step 3: Zooming to Building                                  -->
+  <!-- Step 4: Building with Interactive Level Steps                -->
+  <!-- Finish: Go Explore Button -> Load Website                   -->
+  <!-- ============================================================ -->
+  <div class="site-prologue" id="sitePrologue">
+    
+    <!-- Top Prologue Header -->
+    <div class="prologue-header">
+      <div class="prologue-logo">
+        <svg class="medore-svg-logo-sm" viewBox="0 0 280.4 204.5" xmlns="http://www.w3.org/2000/svg">
+          <polygon fill="#ffd56b" points="96.4 117.1 115.6 117.1 151.1 39.6 186.1 117.1 205.4 117.1 150.9 0 96.4 117.1"/>
+        </svg>
+        <span>ME DO RE DUBAI</span>
+      </div>
+
+      <!-- Navigation Step Pills -->
+      <div class="prologue-step-nav" id="prologueStepNav">
+        <button class="step-nav-btn active" data-step="1">1. DUBAI VIEW</button>
+        <button class="step-nav-btn" data-step="2">2. JLT CLUSTER</button>
+        <button class="step-nav-btn" data-step="3">3. THE BUILDING</button>
+        <button class="step-nav-btn" data-step="4">4. EXPLORE LEVELS</button>
+      </div>
+
+      <button class="btn-skip-intro" id="btnSkipIntro">
+        <span>GO EXPLORE</span>
+        <i class="fa-solid fa-arrow-right"></i>
+      </button>
+    </div>
+
+    <!-- Visual Canvas Stage (Multi-Layer Images) -->
+    <div class="prologue-stage" id="prologueStage">
+      
+      <!-- STEP 1: First Image, First View (Dubai Palm 3D masterplan with ME DO RE Pin) -->
+      <div class="prologue-layer layer-view-1" id="pLayerView1">
+        <img src="public/images/dubai-view-1.jpg" alt="Dubai 3D View with Palm Jumeirah" class="prologue-img" />
+      </div>
+
+      <!-- STEP 2: Second View (Zooming in to JLT lake & cluster with red line) -->
+      <div class="prologue-layer layer-view-2" id="pLayerView2">
+        <img src="public/images/dubai-view-2.jpg" alt="JLT Lake Cluster Zoom View" class="prologue-img" />
+      </div>
+
+      <!-- STEP 3 & 4: The Building Exterior & Interactive Levels -->
+      <div class="prologue-layer layer-building-levels" id="pLayerBuilding">
+        <img src="public/images/medore-exterior.jpg" alt="ME DO RE 39-Storey Tower" class="prologue-img building-main-img" id="pBuildingImg" />
+
+        <!-- Interactive Building Levels (Steps on the Building) -->
+        <div class="building-levels-overlay" id="buildingLevelsOverlay">
+          
+          <!-- Level 1: Penthouse (Levels 38-39) -->
+          <div class="building-level-row level-penthouse" data-level="penthouse">
+            <div class="level-indicator-box">
+              <span class="level-badge">LVL 38 - 39</span>
+              <div class="level-info">
+                <strong>Crown Sky Penthouses</strong>
+                <small>Duplex · Private Sky Terrace & Plunge Pool</small>
+              </div>
+            </div>
+            <button class="btn-inspect-level" title="Inspect Architectural Plan">
+              <i class="fa-solid fa-compass-drafting"></i>
+              <span>VIEW ARCHITECTURE</span>
+            </button>
+          </div>
+
+          <!-- Level 2: Sky Pool & Spa (Levels 20-21) -->
+          <div class="building-level-row level-pool" data-level="pool">
+            <div class="level-indicator-box">
+              <span class="level-badge">LVL 20 - 21</span>
+              <div class="level-info">
+                <strong>Infinity Sky Pool & Spa</strong>
+                <small>Wellness Deck · Hydro-massage Jacuzzi</small>
+              </div>
+            </div>
+            <button class="btn-inspect-level" title="Inspect Architectural Plan">
+              <i class="fa-solid fa-compass-drafting"></i>
+              <span>VIEW ARCHITECTURE</span>
+            </button>
+          </div>
+
+          <!-- Level 3: Luxury Residences (Levels 05-37) -->
+          <div class="building-level-row level-residences" data-level="residences">
+            <div class="level-indicator-box">
+              <span class="level-badge">LVL 05 - 37</span>
+              <div class="level-info">
+                <strong>Smart Luxury Residences</strong>
+                <small>Studios, 1, 2 & 3 Beds · AI Home Automation</small>
+              </div>
+            </div>
+            <button class="btn-inspect-level" title="Inspect Architectural Plan">
+              <i class="fa-solid fa-compass-drafting"></i>
+              <span>VIEW ARCHITECTURE</span>
+            </button>
+          </div>
+
+          <!-- Level 4: Podium & Lobby (Ground - Level 04) -->
+          <div class="building-level-row level-podium" data-level="podium">
+            <div class="level-indicator-box">
+              <span class="level-badge">GROUND & PODIUM</span>
+              <div class="level-info">
+                <strong>Grand Atrium & Promenade</strong>
+                <small>Smart Valet · Retail · Lakefront Access</small>
+              </div>
+            </div>
+            <button class="btn-inspect-level" title="Inspect Architectural Plan">
+              <i class="fa-solid fa-compass-drafting"></i>
+              <span>VIEW ARCHITECTURE</span>
+            </button>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Vignettes -->
+      <div class="prologue-vignette"></div>
+      <div class="prologue-gradient"></div>
+    </div>
+
+    <!-- Prologue Step Story HUD (Bottom / Left) -->
+    <div class="prologue-story-box">
+      
+      <!-- Step 1 Text -->
+      <div class="prologue-story-step active" id="pStep1">
+        <div class="p-eyebrow">STEP 01 · REGIONAL CONTEXT</div>
+        <h1 class="p-title">DUBAI PANORAMA</h1>
+        <p class="p-subtitle">Overlooking the Arabian Gulf and Palm Jumeirah, ME DO RE rises in prestigious JLT.</p>
+        <div class="p-scroll-indicator">
+          <div class="p-mouse"><span class="p-wheel"></span></div>
+          <span>SCROLL DOWN TO ZOOM TO CLUSTER (OR SCROLL BACK TO START)</span>
+        </div>
+      </div>
+
+      <!-- Step 2 Text -->
+      <div class="prologue-story-step" id="pStep2">
+        <div class="p-eyebrow">STEP 02 · LOCATION ZOOM</div>
+        <h2 class="p-title">JLT CLUSTER L</h2>
+        <p class="p-subtitle">Directly on the scenic lakefront promenade with effortless access to Sheikh Zayed Road.</p>
+        <div class="p-scroll-indicator">
+          <div class="p-mouse"><span class="p-wheel"></span></div>
+          <span>SCROLL DOWN TO ZOOM TO BUILDING</span>
+        </div>
+      </div>
+
+      <!-- Step 3 Text -->
+      <div class="prologue-story-step" id="pStep3">
+        <div class="p-eyebrow">STEP 03 · THE TOWER</div>
+        <h2 class="p-title">ME DO RE TOWER</h2>
+        <p class="p-subtitle">39 storeys of sculpted glass architecture featuring aerodynamic facades and smart living.</p>
+        <div class="p-scroll-indicator">
+          <div class="p-mouse"><span class="p-wheel"></span></div>
+          <span>SCROLL DOWN TO EXPLORE BUILDING LEVELS</span>
+        </div>
+      </div>
+
+      <!-- Step 4 Text (Building Levels Active) -->
+      <div class="prologue-story-step" id="pStep4">
+        <div class="p-eyebrow">STEP 04 · INTERACTIVE LEVELS</div>
+        <h2 class="p-title">EXPLORE BUILDING LEVELS</h2>
+        <p class="p-subtitle">Click on any level above to inspect architectural plans, layouts, and specifications.</p>
+        <div class="p-finish-actions">
+          <button class="btn-go-explore" id="btnGoExplore">
+            <span>GO EXPLORE WEBSITE</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom Progress Rail with Bidirectional Scrub Bar -->
+    <div class="prologue-progress-rail">
+      <div class="p-rail-track">
+        <div class="p-rail-fill" id="pRailFill"></div>
+      </div>
+      <div class="p-rail-labels">
+        <span class="active" id="pLabel1">01 FIRST VIEW</span>
+        <span id="pLabel2">02 SECOND VIEW</span>
+        <span id="pLabel3">03 ZOOM BUILDING</span>
+        <span id="pLabel4">04 LEVELS STEPS</span>
+      </div>
+    </div>
+
+    <!-- ARCHITECTURAL LEVEL INSPECT MODAL (OPENS ON CLICKING A LEVEL) -->
+    <div class="arch-level-modal" id="archLevelModal">
+      <div class="modal-backdrop" id="modalBackdrop"></div>
+      <div class="modal-dialog">
+        <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close Modal">&times;</button>
+        
+        <div class="modal-content-grid">
+          <!-- Left: Architectural Render / Preview -->
+          <div class="modal-visual-side">
+            <div class="modal-img-frame">
+              <img src="public/images/penthouse-living.png" alt="Architectural Plan" id="modalArchImg" />
+            </div>
+            <div class="blueprint-badge" id="modalBlueprintBadge">ARCHITECTURAL SCHEMATIC · DRAFT v2.4</div>
+          </div>
+
+          <!-- Right: Architectural Specifications -->
+          <div class="modal-info-side">
+            <span class="gold-subheading" id="modalLevelTag">LEVEL 38 - 39</span>
+            <h3 class="modal-level-title" id="modalLevelTitle">The Crown Sky Duplex Penthouse</h3>
+            <p class="modal-level-desc" id="modalLevelDesc">
+              Exquisite double-height duplex layout featuring panoramic glass curtain walls, private plunge pool on open sky terrace, Italian marble finishes, and private high-speed elevator access.
+            </p>
+
+            <div class="modal-specs-grid">
+              <div class="m-spec">
+                <span class="lbl">Total Area</span>
+                <strong class="val" id="modalSpecArea">5,850 Sq.Ft</strong>
+              </div>
+              <div class="m-spec">
+                <span class="lbl">Ceiling Height</span>
+                <strong class="val" id="modalSpecCeiling">6.2 Meters</strong>
+              </div>
+              <div class="m-spec">
+                <span class="lbl">View Aspect</span>
+                <strong class="val" id="modalSpecView">360° Dubai Marina & Sea</strong>
+              </div>
+              <div class="m-spec">
+                <span class="lbl">Smart Integration</span>
+                <strong class="val" id="modalSpecSmart">KNX / Crestron AI</strong>
+              </div>
+            </div>
+
+            <div class="modal-footer-actions">
+              <button class="btn-gold-luxury" id="btnModalClose">
+                <span>CLOSE PREVIEW</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- MAIN HOMEPAGE (medore.ae) LOADED AFTER FINISHING LEVELS      -->
+  <!-- ============================================================ -->
+  <div class="site-wrapper" id="siteWrapper">
+    
+    <!-- Audio Widget -->
+    <div class="audio-toggle-widget" id="audioToggle" title="Toggle Sound / Experience Audio">
+      <div class="sound-bars">
+        <span class="bar bar-1"></span>
+        <span class="bar bar-2"></span>
+        <span class="bar bar-3"></span>
+        <span class="bar bar-4"></span>
+      </div>
+      <span class="audio-label">SOUND</span>
+    </div>
+
+    <!-- Website Header -->
+    <header class="site-header" id="siteHeader">
+      <div class="header-container">
+        <div class="header-left">
+          <button class="nav-toggle" id="navToggle" aria-label="Toggle Menu">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </button>
+          <nav class="primary-nav" id="primaryNav">
+            <ul class="nav-links">
+              <li><a href="#home" class="nav-link">Home</a></li>
+              <li><a href="#philosophy" class="nav-link">Philosophy</a></li>
+              <li><a href="#properties" class="nav-link">Residences</a></li>
+              <li><a href="#amenities" class="nav-link">Amenities</a></li>
+              <li><a href="#penthouse" class="nav-link">Penthouse</a></li>
+              <li><a href="#location" class="nav-link">Location</a></li>
+              <li><a href="#floorplans" class="nav-link">Floor Plans</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- Center Official Medore SVG Logo -->
+        <div class="header-center">
+          <a href="#home" class="brand-logo" aria-label="ME DO RE Home">
+            <svg class="medore-svg-logo" viewBox="0 0 280.4 204.5" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="medore-gold-grad" x1="150.9" y1="-.2" x2="150.9" y2="115.3" gradientUnits="userSpaceOnUse">
+                  <stop offset="0%" stop-color="#ffd56b" />
+                  <stop offset="25%" stop-color="#f8b616" />
+                  <stop offset="50%" stop-color="#f48a28" />
+                  <stop offset="75%" stop-color="#f17033" />
+                  <stop offset="100%" stop-color="#f16638" />
+                </linearGradient>
+              </defs>
+              <g class="logo-letters" fill="#ffffff">
+                <path d="M40.2,180.9c0-.3-.2-1.3-.4-2.8-.2-1.3-.3-2.4-.4-3.2-.2,1-.4,2-.8,3-.3,1-.8,2-1.3,3.1l-11.5,23.5-11.5-24c-.5-1-.9-1.9-1.3-2.9-.4-.9-.7-1.8-.9-2.7,0,.9,0,1.9-.2,2.9-.1,1-.3,2.1-.6,3.2l-4.7,21.7H0l10.4-46,13,27.8c.2.4.5,1.2.9,2.2s.9,2.3,1.5,3.8c.4-1.3,1.1-2.9,2-4.8.2-.5.4-.9.5-1.2l12.7-27.8,10.7,46h-6.7l-4.9-21.8Z"/>
+                <path d="M58.1,202.7v-44.1h24.6v6.1h-17.4v11.1h17.4v6.3h-17.4v14.3h17.4v6.4h-24.6Z"/>
+                <path d="M225.8,183v19.7h-6.7v-44.1h10c2.9,0,5.2.2,6.8.6,1.6.4,3,1,4.1,1.9,1.4,1.1,2.4,2.4,3.2,4.1.7,1.7,1.1,3.5,1.1,5.5,0,3.5-.9,6.3-2.6,8.3-1.7,2-4.2,3.2-7.6,3.6l15.2,20.1h-8.1l-14.7-19.7h-.8ZM226.3,177.4h1.3c3.8,0,6.3-.4,7.6-1.3,1.2-.9,1.9-2.5,1.9-4.7s-.7-4.1-2-5.1c-1.3-1-3.8-1.5-7.4-1.5h-1.3v12.7Z"/>
+                <path d="M255.8,202.7v-44.1h24.6v6.1h-17.4v11.1h17.4v6.3h-17.4v14.3h17.4v6.4h-24.6Z"/>
+                <g>
+                  <path d="M135.1,162.7c-1.9-1.5-4.2-2.5-6.7-3.2-2.6-.6-7-.9-13.3-.9h-9.7v44.1h11.6c5.2,0,9-.3,11.5-.9,2.5-.6,4.7-1.7,6.6-3.2,2.6-2,4.5-4.5,5.8-7.5,1.3-3,2-6.5,2-10.4s-.7-7.4-2-10.5c-1.3-3.1-3.2-5.6-5.8-7.5ZM134.2,188c-.8,2.1-2.1,3.9-3.8,5.3-1.2,1-2.7,1.8-4.3,2.2-1.7.4-4.1.7-7.5.7h-6v-31.2h5.2c3.7,0,6.4.2,8.2.7,1.7.4,3.2,1.2,4.5,2.2,1.7,1.4,2.9,3.2,3.8,5.3.8,2.1,1.2,4.6,1.2,7.4s-.4,5.3-1.2,7.4Z"/>
+                  <path d="M194.6,171.9c-1.2-2.8-2.9-5.3-5.1-7.5-2.2-2.2-4.8-3.9-7.6-5-2.8-1.1-5.9-1.7-9-1.7s-6.2.6-9.1,1.7c-2.9,1.1-5.4,2.8-7.7,5-2.2,2.2-4,4.7-5.1,7.5-1.2,2.8-1.7,5.8-1.7,8.9s.6,6.1,1.7,8.9c1.2,2.8,2.9,5.3,5.1,7.4,2.2,2.2,4.8,3.8,7.6,5,2.9,1.2,5.9,1.8,9.1,1.8s6.1-.6,9-1.7c2.9-1.2,5.4-2.8,7.7-5,2.2-2.2,4-4.7,5.1-7.5,1.2-2.8,1.8-5.8,1.8-8.9s-.6-6.1-1.8-8.9ZM187.7,187.1c-.8,2-2,3.8-3.5,5.3-1.5,1.6-3.3,2.8-5.2,3.6-1.9.8-4,1.2-6.1,1.2s-4.3-.4-6.2-1.2c-1.9-.8-3.7-2-5.2-3.6-1.5-1.6-2.7-3.3-3.5-5.3-.8-2-1.2-4.1-1.2-6.3s.4-4.4,1.2-6.4c.8-2,2-3.8,3.5-5.3,1.5-1.6,3.3-2.8,5.2-3.6,2-.8,4-1.2,6.2-1.2s4.2.4,6.2,1.2c2,.8,3.7,2,5.2,3.6,1.5,1.6,2.7,3.4,3.5,5.4.8,2,1.2,4.1,1.2,6.4s-.4,4.3-1.2,6.3Z"/>
+                </g>
+              </g>
+              <polygon fill="url(#medore-gold-grad)" points="96.4 117.1 115.6 117.1 151.1 39.6 186.1 117.1 205.4 117.1 150.9 0 96.4 117.1"/>
+            </svg>
+          </a>
+        </div>
+
+        <div class="header-right">
+          <button class="btn-replay-prologue" id="btnReplayPrologue" title="View 3D Steps & Levels">
+            <i class="fa-solid fa-map-location-dot"></i>
+            <span>3D STEPS INTRO</span>
+          </button>
+          <a href="#register" class="btn-register-cta">
+            <span class="btn-text">REGISTER INTEREST</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- ACTUAL HOMEPAGE HERO SECTION -->
+    <section class="home-hero-section" id="home">
+      <div class="home-hero-media">
+        <video
+          id="homeHeroVideo"
+          class="home-hero-video"
+          src="public/medore-tower-hero.mp4"
+          poster="public/images/medore-hero.jpg"
+          autoplay
+          muted
+          loop
+          playsinline
+        ></video>
+        <div class="home-hero-overlay"></div>
+      </div>
+
+      <div class="home-hero-content text-center">
+        <div class="gold-subheading">ME DO RE PROPERTIES · JLT DUBAI</div>
+        <h1 class="home-hero-headline">
+          Buy Office Spaces & Apartments <br />
+          <span class="gold-gradient-text">ME DO RE Towers Dubai</span>
+        </h1>
+        <p class="home-hero-subheadline">
+          Experience smart living in completed 39-storey residences, duplex penthouses, and executive business suites overlooking the pristine lakes of JLT.
+        </p>
+
+        <div class="home-hero-buttons">
+          <a href="#register" class="btn-gold-luxury">
+            <span>REGISTER YOUR INTEREST</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a href="#properties" class="btn-outline-luxury">
+            <span>EXPLORE PROPERTIES</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="scroll-down-hint">
+        <span>SCROLL TO EXPLORE</span>
+        <i class="fa-solid fa-chevron-down"></i>
+      </div>
+    </section>
+
+    <!-- 1. PHILOSOPHY SECTION -->
+    <section class="section philosophy-section" id="philosophy">
+      <div class="content-container">
+        <div class="section-header-split">
+          <div class="split-col-left">
+            <span class="gold-subheading">THE PHILOSOPHY</span>
+            <h2 class="section-title">
+              Where Intelligent Automation Meets <span class="gold-gradient-text">Architectural Artistry.</span>
+            </h2>
+          </div>
+          <div class="split-col-right">
+            <p class="lead-text">
+              ME DO RE represents a visionary leap in modern urban architecture. Built with an uncompromising commitment to aesthetic harmony, ecological efficiency, and state-of-the-art smart home integration.
+            </p>
+            <p class="secondary-text">
+              Every detail—from the smart touchless elevators and facial recognition access to the energy-saving smart climate controllers and automated shades—has been calculated to enrich your everyday moments with seamless comfort.
+            </p>
+          </div>
+        </div>
+
+        <div class="pillars-grid">
+          <div class="pillar-card">
+            <div class="pillar-icon"><i class="fa-solid fa-microchip"></i></div>
+            <h3 class="pillar-title">Smart Building Technology</h3>
+            <p class="pillar-text">Touchless high-speed elevators, biometric security, automated environmental controls, and integrated mobile app residence management.</p>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon"><i class="fa-solid fa-water-ladder"></i></div>
+            <h3 class="pillar-title">Resort-Inspired Amenities</h3>
+            <p class="pillar-text">Temperature-controlled infinity pool overlooking the skyline, private golf simulator, jacuzzi, steam rooms, and executive lounge facilities.</p>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon"><i class="fa-solid fa-gem"></i></div>
+            <h3 class="pillar-title">Uncompromising Quality</h3>
+            <p class="pillar-text">Designer European porcelain tiles, Italian custom cabinetry, premium Kohler sanitary ware, and soundproof double-glazed acoustic curtain walls.</p>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon"><i class="fa-solid fa-compass"></i></div>
+            <h3 class="pillar-title">Prime Waterfront Address</h3>
+            <p class="pillar-text">Cluster L, Jumeirah Lake Towers. Direct pedestrian connectivity to lakefront promenades, gourmet dining, retail boutiques, and green parks.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. THE PROPERTY COLLECTION SHOWCASE -->
+    <section class="section properties-section" id="properties">
+      <div class="content-container">
+        <div class="section-header text-center">
+          <span class="gold-subheading">THE COLLECTION</span>
+          <h2 class="section-title">Curated Residences & Executive Suites</h2>
+          <p class="section-subtitle">
+            Choose from an elite portfolio of residential homes, prime commercial offices, and signature sky penthouses.
+          </p>
+          
+          <div class="collection-tabs" id="collectionTabs">
+            <button class="tab-btn active" data-filter="all">ALL DEVELOPMENTS</button>
+            <button class="tab-btn" data-filter="medore1">ME DO RE 1</button>
+            <button class="tab-btn" data-filter="medore2">ME DO RE 2</button>
+            <button class="tab-btn" data-filter="business">ME DO RE BUSINESS</button>
+            <button class="tab-btn" data-filter="penthouse">PENTHOUSES</button>
+          </div>
+        </div>
+
+        <div class="properties-grid">
+          
+          <div class="property-card" data-category="medore1">
+            <div class="card-media">
+              <img src="public/images/medore-exterior.jpg" alt="ME DO RE 1 Tower" loading="lazy" />
+              <span class="card-status-badge">READY TO MOVE IN</span>
+            </div>
+            <div class="card-body">
+              <div class="card-header-row">
+                <h3 class="card-title">ME DO RE 1</h3>
+                <span class="card-tag">Residential Tower</span>
+              </div>
+              <p class="card-desc">Completed 39-storey tower offering ready-to-move-in luxury studios, 1, 2 & 3-bedroom residences with integrated smart home features and lake views.</p>
+              <div class="card-specs">
+                <div class="spec-item"><i class="fa-solid fa-bed"></i> Studio - 3 Beds</div>
+                <div class="spec-item"><i class="fa-solid fa-maximize"></i> 470 - 2,450 Sq.Ft</div>
+                <div class="spec-item"><i class="fa-solid fa-eye"></i> Lake & Marina Views</div>
+              </div>
+              <div class="card-footer">
+                <a href="#register" class="btn-card-action">INQUIRE AVAILABILITY</a>
+                <a href="https://medore.ae/wp-content/uploads/2025/04/ME-DO-RE-1-Brochure.pdf" target="_blank" class="btn-card-brochure" title="Download Brochure">
+                  <i class="fa-solid fa-arrow-down-to-bracket"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="property-card" data-category="medore2">
+            <div class="card-media">
+              <img src="public/images/medore-2.jpg" alt="ME DO RE 2 Luxury Tower" loading="lazy" />
+              <span class="card-status-badge badge-new">NEW LAUNCH</span>
+            </div>
+            <div class="card-body">
+              <div class="card-header-row">
+                <h3 class="card-title">ME DO RE 2</h3>
+                <span class="card-tag">Ultra-Luxury</span>
+              </div>
+              <p class="card-desc">The next chapter in the ME DO RE legacy. Elevated contemporary luxury, sculpted facades, expansive balconies, and private infinity sky lounges.</p>
+              <div class="card-specs">
+                <div class="spec-item"><i class="fa-solid fa-bed"></i> 1, 2, 3 & 4 Beds</div>
+                <div class="spec-item"><i class="fa-solid fa-maximize"></i> 820 - 3,200 Sq.Ft</div>
+                <div class="spec-item"><i class="fa-solid fa-chart-line"></i> Prime Capital Growth</div>
+              </div>
+              <div class="card-footer">
+                <a href="#register" class="btn-card-action">REGISTER FOR LAUNCH</a>
+                <a href="https://medore.ae/wp-content/uploads/2025/04/ME-DO-RE-2-Brochure.pdf" target="_blank" class="btn-card-brochure" title="Download Brochure">
+                  <i class="fa-solid fa-arrow-down-to-bracket"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="property-card" data-category="business">
+            <div class="card-media">
+              <img src="public/images/banner-business.jpg" alt="ME DO RE Business Tower" loading="lazy" />
+              <span class="card-status-badge badge-business">COMMERCIAL PRIME</span>
+            </div>
+            <div class="card-body">
+              <div class="card-header-row">
+                <h3 class="card-title">ME DO RE Business</h3>
+                <span class="card-tag">Executive Offices</span>
+              </div>
+              <p class="card-desc">Grade-A commercial workspace crafted for international corporations, family offices, and fintech enterprises inside Dubai's freezone DMCC hub.</p>
+              <div class="card-specs">
+                <div class="spec-item"><i class="fa-solid fa-building"></i> Grade-A Commercial</div>
+                <div class="spec-item"><i class="fa-solid fa-maximize"></i> 1,200 - 15,000 Sq.Ft</div>
+                <div class="spec-item"><i class="fa-solid fa-certificate"></i> DMCC Freezone</div>
+              </div>
+              <div class="card-footer">
+                <a href="#register" class="btn-card-action">REQUEST OFFICE PACK</a>
+                <a href="https://medore.ae/wp-content/uploads/2025/05/MEDORE-2.pdf" target="_blank" class="btn-card-brochure" title="Download Brochure">
+                  <i class="fa-solid fa-arrow-down-to-bracket"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="property-card" data-category="penthouse">
+            <div class="card-media">
+              <img src="public/images/penthouse-living.png" alt="ME DO RE Penthouse" loading="lazy" />
+              <span class="card-status-badge badge-exclusive">LIMITED EDITION</span>
+            </div>
+            <div class="card-body">
+              <div class="card-header-row">
+                <h3 class="card-title">The Royal Penthouse</h3>
+                <span class="card-tag">Sky Duplex</span>
+              </div>
+              <p class="card-desc">Crowning the summit of ME DO RE. Double-height ceilings, private panoramic terrace, personal plunge pool, and bespoke luxury interior finishes.</p>
+              <div class="card-specs">
+                <div class="spec-item"><i class="fa-solid fa-crown"></i> 4 & 5 Bed Duplex</div>
+                <div class="spec-item"><i class="fa-solid fa-maximize"></i> 5,800+ Sq.Ft</div>
+                <div class="spec-item"><i class="fa-solid fa-swimming-pool"></i> Private Sky Terrace</div>
+              </div>
+              <div class="card-footer">
+                <a href="#register" class="btn-card-action">PRIVATE VIP VIEWING</a>
+                <a href="#penthouse" class="btn-card-brochure" title="View Penthouse Experience">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. SIGNATURE AMENITIES -->
+    <section class="section amenities-section" id="amenities">
+      <div class="content-container">
+        <div class="section-header-split">
+          <div class="split-col-left">
+            <span class="gold-subheading">RESORT-LEVEL LIVING</span>
+            <h2 class="section-title">
+              Designed for Wellness, <br />
+              <span class="gold-gradient-text">Leisure & Distinction.</span>
+            </h2>
+          </div>
+          <div class="split-col-right">
+            <p class="lead-text">
+              At ME DO RE, everyday life is elevated by an exclusive suite of wellness, fitness, and entertainment amenities comparable to the world's finest boutique resorts.
+            </p>
+          </div>
+        </div>
+
+        <div class="amenities-grid">
+          <div class="amenity-tile">
+            <div class="amenity-bg-img" style="background-image: url('public/images/property-1.jpg');"></div>
+            <div class="amenity-content">
+              <div class="amenity-icon-circle"><i class="fa-solid fa-water-ladder"></i></div>
+              <h3 class="amenity-title">Infinity Sky Pool & Jacuzzi</h3>
+              <p class="amenity-text">Temperature-regulated pool perched above JLT with daybeds, hydro-massage jets, and sunset vistas.</p>
+            </div>
+          </div>
+
+          <div class="amenity-tile">
+            <div class="amenity-bg-img" style="background-image: url('public/images/medore-hero.jpg');"></div>
+            <div class="amenity-content">
+              <div class="amenity-icon-circle"><i class="fa-solid fa-golf-ball-tee"></i></div>
+              <h3 class="amenity-title">Full Swing Golf Simulator</h3>
+              <p class="amenity-text">Practice your drive on championship virtual courses with precision radar tracking right inside your tower.</p>
+            </div>
+          </div>
+
+          <div class="amenity-tile">
+            <div class="amenity-bg-img" style="background-image: url('public/images/property-2.jpg');"></div>
+            <div class="amenity-content">
+              <div class="amenity-icon-circle"><i class="fa-solid fa-dumbbell"></i></div>
+              <h3 class="amenity-title">Technogym Fitness Hub</h3>
+              <p class="amenity-text">Equipped with cutting-edge cardio, free weights, personal training studio, steam room, and sauna.</p>
+            </div>
+          </div>
+
+          <div class="amenity-tile">
+            <div class="amenity-bg-img" style="background-image: url('public/images/penthouse-terrace.png');"></div>
+            <div class="amenity-content">
+              <div class="amenity-icon-circle"><i class="fa-solid fa-champagne-glasses"></i></div>
+              <h3 class="amenity-title">Private Residents' Club & Lounge</h3>
+              <p class="amenity-text">An elegant social haven featuring billiards, espresso bar, high-speed Wi-Fi, and private event hosting.</p>
+            </div>
+          </div>
+
+          <div class="amenity-tile">
+            <div class="amenity-bg-img" style="background-image: url('public/images/banner-business.jpg');"></div>
+            <div class="amenity-content">
+              <div class="amenity-icon-circle"><i class="fa-solid fa-briefcase"></i></div>
+              <h3 class="amenity-title">Executive Business Center</h3>
+              <p class="amenity-text">Dedicated video conference rooms, private pod workstations, and fast printing services for residents.</p>
+            </div>
+          </div>
+
+          <div class="amenity-tile">
+            <div class="amenity-bg-img" style="background-image: url('public/images/medore-facade.jpg');"></div>
+            <div class="amenity-content">
+              <div class="amenity-icon-circle"><i class="fa-solid fa-bell-concierge"></i></div>
+              <h3 class="amenity-title">24/7 Smart Valet & Concierge</h3>
+              <p class="amenity-text">Round-the-clock white-glove assistance, automated package lockers, and seamless car valet reception.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. PENTHOUSE FEATURE SPOTLIGHT -->
+    <section class="section penthouse-section" id="penthouse">
+      <div class="content-container">
+        <div class="penthouse-feature-wrapper">
+          <div class="penthouse-visuals">
+            <div class="penthouse-main-image">
+              <img src="public/images/penthouse-living.png" alt="ME DO RE Penthouse Living Room" id="penthouseDisplayImg" />
+            </div>
+            <div class="penthouse-thumbs">
+              <button class="thumb-btn active" data-src="public/images/penthouse-living.png">
+                <img src="public/images/penthouse-living.png" alt="Living Room" />
+                <span>LIVING SUITE</span>
+              </button>
+              <button class="thumb-btn" data-src="public/images/penthouse-terrace.png">
+                <img src="public/images/penthouse-terrace.png" alt="Private Terrace" />
+                <span>SKY TERRACE</span>
+              </button>
+              <button class="thumb-btn" data-src="public/images/medore-hero.jpg">
+                <img src="public/images/medore-hero.jpg" alt="Skyline Panorama" />
+                <span>HORIZON VIEW</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="penthouse-details">
+            <span class="gold-subheading">THE PINNACLE OF LUXURY</span>
+            <h2 class="penthouse-heading">
+              ME DO RE 1 <br />
+              <span class="gold-gradient-text">Sky Penthouse</span>
+            </h2>
+            <p class="penthouse-text">
+              Perched high above the city, this magnificent duplex residence redefines luxury high-rise living. With panoramic wrap-around floor-to-ceiling glass, Italian book-matched marble, private elevator entry, and expansive entertainment terraces.
+            </p>
+            
+            <ul class="penthouse-features-list">
+              <li><i class="fa-solid fa-check"></i> Expansive open-plan double height living space</li>
+              <li><i class="fa-solid fa-check"></i> Private landscaped sky terrace with jacuzzi setup</li>
+              <li><i class="fa-solid fa-check"></i> Gourmet chef kitchen with built-in Miele appliances</li>
+              <li><i class="fa-solid fa-check"></i> Master sanctuary with walk-in dressing room & spa bath</li>
+              <li><i class="fa-solid fa-check"></i> Complete integrated Crestron / KNX smart home system</li>
+            </ul>
+
+            <div class="penthouse-cta-row">
+              <a href="#register" class="btn-gold-luxury">
+                <span>SCHEDULE PRIVATE VIEWING</span>
+                <i class="fa-solid fa-key"></i>
+              </a>
+              <span class="price-note">Price on confidential inquiry</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. LOCATION & CONNECTIVITY MAP SECTION -->
+    <section class="section location-section" id="location">
+      <div class="content-container">
+        <div class="section-header text-center">
+          <span class="gold-subheading">PRIME WATERFRONT LOCATION</span>
+          <h2 class="section-title">Cluster L · Jumeirah Lake Towers</h2>
+          <p class="section-subtitle">
+            Seamlessly linked to Dubai's major arteries, business districts, and coastlines.
+          </p>
+        </div>
+
+        <div class="location-layout">
+          <div class="location-cards-col">
+            <div class="proximity-card">
+              <div class="card-icon-box"><i class="fa-solid fa-plane-departure"></i></div>
+              <div class="card-info">
+                <h4>Airports</h4>
+                <div class="dist-row"><span>Al Maktoum Int'l (DWC)</span><strong>31.0 KM</strong></div>
+                <div class="dist-row"><span>Dubai Int'l (DXB)</span><strong>35.0 KM</strong></div>
+              </div>
+            </div>
+
+            <div class="proximity-card">
+              <div class="card-icon-box"><i class="fa-solid fa-bag-shopping"></i></div>
+              <div class="card-info">
+                <h4>Shopping & Entertainment</h4>
+                <div class="dist-row"><span>Dubai Marina Mall</span><strong>3.9 KM</strong></div>
+                <div class="dist-row"><span>Ibn Battuta Mall</span><strong>3.9 KM</strong></div>
+                <div class="dist-row"><span>Mall of the Emirates</span><strong>11.5 KM</strong></div>
+              </div>
+            </div>
+
+            <div class="proximity-card">
+              <div class="card-icon-box"><i class="fa-solid fa-umbrella-beach"></i></div>
+              <div class="card-info">
+                <h4>Attractions & Beaches</h4>
+                <div class="dist-row"><span>JBR Beach</span><strong>4.7 KM</strong></div>
+                <div class="dist-row"><span>Ain Dubai</span><strong>4.5 KM</strong></div>
+                <div class="dist-row"><span>Palm Jumeirah</span><strong>11.0 KM</strong></div>
+              </div>
+            </div>
+
+            <div class="proximity-card">
+              <div class="card-icon-box"><i class="fa-solid fa-train-subway"></i></div>
+              <div class="card-info">
+                <h4>Public Transit</h4>
+                <div class="dist-row"><span>DMCC Metro Station</span><strong>5 Min Walk</strong></div>
+                <div class="dist-row"><span>Sheikh Zayed Road Access</span><strong>2 Min Drive</strong></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="location-map-col">
+            <div class="map-frame">
+              <img src="public/images/location-map.jpg" alt="ME DO RE JLT Map Location" class="map-image" />
+              <div class="map-overlay-badge">
+                <div class="pulse-ring"></div>
+                <div class="pin-marker"><i class="fa-solid fa-building"></i></div>
+                <span>ME DO RE TOWERS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. FLOOR PLANS EXPLORER -->
+    <section class="section floorplans-section" id="floorplans">
+      <div class="content-container">
+        <div class="section-header text-center">
+          <span class="gold-subheading">SMART LAYOUTS</span>
+          <h2 class="section-title">Explore Floor Plans & Configurations</h2>
+          <p class="section-subtitle">
+            Engineered with spatial intelligence, abundant natural light, and floor-to-ceiling glass doors.
+          </p>
+
+          <div class="floorplan-nav" id="floorplanNav">
+            <button class="fp-btn active" data-unit="studio">Studio</button>
+            <button class="fp-btn" data-unit="1bed">1 Bedroom</button>
+            <button class="fp-btn" data-unit="2bed">2 Bedroom</button>
+            <button class="fp-btn" data-unit="3bed">3 Bedroom</button>
+            <button class="fp-btn" data-unit="penthouse">Sky Duplex</button>
+          </div>
+        </div>
+
+        <div class="floorplan-showcase" id="floorplanShowcase">
+          <div class="fp-diagram-box">
+            <div class="fp-schematic" id="fpSchematic">
+              <svg viewBox="0 0 600 400" class="blueprint-svg">
+                <rect x="20" y="20" width="560" height="360" fill="none" stroke="#c89b4b" stroke-width="2" stroke-dasharray="6 4" />
+                <rect x="40" y="40" width="220" height="170" fill="rgba(200, 155, 75, 0.08)" stroke="#c89b4b" stroke-width="1.5" />
+                <text x="150" y="130" fill="#f6f4f1" font-size="14" text-anchor="middle" font-family="'Plus Jakarta Sans'">MASTER SUITE</text>
+                <rect x="280" y="40" width="280" height="230" fill="rgba(200, 155, 75, 0.12)" stroke="#c89b4b" stroke-width="1.5" />
+                <text x="420" y="160" fill="#f6f4f1" font-size="16" text-anchor="middle" font-family="'Plus Jakarta Sans'" font-weight="600">LIVING & DINING SALON</text>
+                <rect x="280" y="290" width="280" height="70" fill="rgba(200, 155, 75, 0.2)" stroke="#c89b4b" stroke-width="1.5" />
+                <text x="420" y="332" fill="#e6b764" font-size="13" text-anchor="middle" font-family="'Plus Jakarta Sans'">PANORAMIC TERRACE</text>
+                <rect x="40" y="230" width="130" height="130" fill="rgba(200, 155, 75, 0.08)" stroke="#c89b4b" stroke-width="1" />
+                <text x="105" y="300" fill="#9ba3af" font-size="12" text-anchor="middle">KITCHEN</text>
+                <rect x="180" y="230" width="80" height="130" fill="rgba(200, 155, 75, 0.08)" stroke="#c89b4b" stroke-width="1" />
+                <text x="220" y="300" fill="#9ba3af" font-size="11" text-anchor="middle">BATH</text>
+              </svg>
+            </div>
+            <div class="fp-badge" id="fpBadge">SMART RESIDENCE TYPE A</div>
+          </div>
+
+          <div class="fp-info-panel">
+            <h3 class="fp-title" id="fpTitle">1 Bedroom Luxury Apartment</h3>
+            <p class="fp-summary" id="fpSummary">
+              An exquisitely configured 1-bedroom home with an expansive salon, powder room for guests, designer kitchen with built-in appliances, and direct access to a deep private balcony.
+            </p>
+
+            <div class="fp-specs-table">
+              <div class="table-row"><span class="label">Total Built-Up Area</span><span class="val" id="fpArea">895 Sq.Ft (83.15 Sq.M)</span></div>
+              <div class="table-row"><span class="label">Balcony Area</span><span class="val" id="fpBalcony">115 Sq.Ft (10.68 Sq.M)</span></div>
+              <div class="table-row"><span class="label">Bathrooms</span><span class="val" id="fpBaths">2 (1 Ensuite + Powder Room)</span></div>
+              <div class="table-row"><span class="label">Smart Systems</span><span class="val">Lighting, AC, Keyless Entry</span></div>
+              <div class="table-row"><span class="label">View Aspect</span><span class="val" id="fpView">JLT Lake & Skyline</span></div>
+            </div>
+
+            <div class="fp-action-row">
+              <a href="#register" class="btn-gold-luxury">
+                <span>INQUIRE ABOUT THIS UNIT</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+              <a href="https://medore.ae/wp-content/uploads/2025/04/ME-DO-RE-1-Brochure.pdf" target="_blank" class="btn-outline-luxury">
+                <i class="fa-solid fa-file-pdf"></i>
+                <span>DOWNLOAD PLAN</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. VIP REGISTRATION FORM -->
+    <section class="section register-section" id="register">
+      <div class="content-container">
+        <div class="register-grid">
+          <div class="register-info-side">
+            <span class="gold-subheading">PRIVATE APPOINTMENTS</span>
+            <h2 class="register-title">
+              Register Your Interest for <br />
+              <span class="gold-gradient-text">ME DO RE Towers.</span>
+            </h2>
+            <p class="register-desc">
+              Whether you are seeking a premier primary residence, a prestigious corporate headquarters, or an ultra-luxury Dubai real estate investment with strong yields, our VIP advisory team is at your disposal.
+            </p>
+
+            <div class="contact-highlights">
+              <div class="c-item">
+                <i class="fa-solid fa-phone"></i>
+                <div>
+                  <span class="c-label">TELEPHONE</span>
+                  <a href="tel:+97145808888" class="c-val">+971 4 580 8888</a>
+                </div>
+              </div>
+              <div class="c-item">
+                <i class="fa-solid fa-envelope"></i>
+                <div>
+                  <span class="c-label">DIRECT INQUIRIES</span>
+                  <a href="mailto:info@medore.ae" class="c-val">info@medore.ae</a>
+                </div>
+              </div>
+              <div class="c-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <div>
+                  <span class="c-label">ON-SITE SALES EXPERIENCE CENTRE</span>
+                  <span class="c-val">Cluster L, Jumeirah Lake Towers, Dubai, UAE</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="register-form-side">
+            <div class="form-card">
+              <h3 class="form-card-title">Direct Sales Inquiry</h3>
+              <p class="form-card-subtitle">Complete the confidential form below to receive pricing & floor plans.</p>
+
+              <form id="vipInquiryForm" class="vip-form" onsubmit="return false;">
+                <div class="form-group">
+                  <label for="userName">Full Name *</label>
+                  <input type="text" id="userName" name="userName" required placeholder="e.g. Alexander Vance" />
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group flex-1">
+                    <label for="userEmail">Email Address *</label>
+                    <input type="email" id="userEmail" name="userEmail" required placeholder="name@domain.com" />
+                  </div>
+                  <div class="form-group flex-1">
+                    <label for="userPhone">Phone / WhatsApp *</label>
+                    <input type="tel" id="userPhone" name="userPhone" required placeholder="+971 50 123 4567" />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="propertyInterest">Property of Interest *</label>
+                  <select id="propertyInterest" name="propertyInterest" required>
+                    <option value="" disabled selected>Select Property...</option>
+                    <option value="medore1-residences">ME DO RE 1 — Residential Apartments (Ready)</option>
+                    <option value="medore2-new-launch">ME DO RE 2 — New Luxury Launch</option>
+                    <option value="medore-business">ME DO RE Business — Commercial Offices</option>
+                    <option value="sky-penthouse">The Royal Sky Penthouse</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="userMessage">Your Requirements / Budget (Optional)</label>
+                  <textarea id="userMessage" name="userMessage" rows="3" placeholder="Tell us about your preferred unit size, move-in timeline, or investment goals..."></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit-vip" id="btnSubmitForm">
+                  <span>SUBMIT INQUIRY</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+                <div class="form-feedback" id="formFeedback"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="content-container">
+        <div class="footer-top-grid">
+          <div class="footer-col-brand">
+            <div class="footer-logo">
+              <svg class="medore-svg-logo-sm" viewBox="0 0 280.4 204.5" xmlns="http://www.w3.org/2000/svg">
+                <polygon fill="#c89b4b" points="96.4 117.1 115.6 117.1 151.1 39.6 186.1 117.1 205.4 117.1 150.9 0 96.4 117.1"/>
+              </svg>
+              <span class="footer-brand-title">ME DO RE</span>
+            </div>
+            <p class="footer-brand-desc">
+              Redefining high-rise residential & business excellence across Dubai. Smart living, sustainable engineering, and timeless architectural luxury.
+            </p>
+            <div class="footer-social-links">
+              <a href="https://www.facebook.com/medoreproperties" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="https://www.instagram.com/medoreproperties" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/company/me-do-re-properties" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="https://twitter.com/medoreproperty" target="_blank" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="https://www.youtube.com/@medoreproperties" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4 class="footer-heading">DEVELOPMENTS</h4>
+            <ul class="footer-links">
+              <li><a href="#properties">ME DO RE 1 Residential</a></li>
+              <li><a href="#properties">ME DO RE 2 Tower</a></li>
+              <li><a href="#properties">ME DO RE Business Suites</a></li>
+              <li><a href="#penthouse">The Sky Penthouses</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4 class="footer-heading">DISCOVER</h4>
+            <ul class="footer-links">
+              <li><a href="#philosophy">Smart Architecture</a></li>
+              <li><a href="#amenities">Resort Amenities</a></li>
+              <li><a href="#location">JLT Location Guide</a></li>
+              <li><a href="#floorplans">Floor Plans & Specs</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4 class="footer-heading">DOWNLOADS</h4>
+            <ul class="footer-links">
+              <li><a href="https://medore.ae/wp-content/uploads/2025/04/ME-DO-RE-1-Brochure.pdf" target="_blank">ME DO RE 1 Brochure (PDF)</a></li>
+              <li><a href="https://medore.ae/wp-content/uploads/2025/04/ME-DO-RE-2-Brochure.pdf" target="_blank">ME DO RE 2 Brochure (PDF)</a></li>
+              <li><a href="https://medore.ae/wp-content/uploads/2025/05/MEDORE-2.pdf" target="_blank">Business Tower Brochure (PDF)</a></li>
+              <li><a href="#register">VIP Investor Deck</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom-bar">
+          <p>&copy; 2026 ME DO RE Properties. All rights reserved. Registered with Dubai Land Department (DLD).</p>
+          <div class="footer-legal-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">DLD RERA Permit</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head><title>Video Info</title></head>
+<body>
+  <video id="vid" src="/public/medore-tower-hero.mp4" muted></video>
+  <div id="output">Loading...</div>
+  <script>
+    const vid = document.getElementById('vid');
+    const out = document.getElementById('output');
+    vid.addEventListener('loadedmetadata', () => {
+      out.textContent = JSON.stringify({
+        duration: vid.duration,
+        width: vid.videoWidth,
+        height: vid.videoHeight
+      });
+      console.log('VIDEO_INFO:' + out.textContent);
+    });
+  </script>
+</body>
+</html>

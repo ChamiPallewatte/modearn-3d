@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head><title>Extract Frames</title></head>
+<body>
+  <video id="vid" src="/public/medore-banner-video.mp4" muted crossorigin="anonymous"></video>
+  <canvas id="cvs"></canvas>
+  <div id="status">Starting...</div>
+  <script>
+    const vid = document.getElementById('vid');
+    const cvs = document.getElementById('cvs');
+    const ctx = cvs.getContext('2d');
+    const status = document.getElementById('status');
+
+    // Sampling points across the video to discover all cinematic scenes
+    // Especially the first 30 seconds and key timestamps
+    const sampleTimes = [
+      0.5, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
+      12, 14, 16, 18, 20, 22, 24, 26, 28, 30,
+      35, 40, 50, 60, 75, 90, 110, 130, 150, 180, 210, 240, 270
+    ];
+
+    vid.addEventListener('loadedmetadata', async () => {
+      cvs.width = 960;
+      cvs.height = 540;
+      status.textContent = 'Metadata loaded, starting extraction...';
+
+      for (let i = 0; i < sampleTimes.length; i++) {
+        const t = sampleTimes[i];
+        status.textContent = `Seeking to ${t}s (${i+1}/${sampleTimes.length})...`;
+        await seekTo(t);
+        ctx.drawImage(vid, 0, 0, cvs.width, cvs.height);
+        const dataUrl = cvs.toDataURL('image/jpeg', 0.85);
+
+        const filename = `frame_${String(i).padStart(3, '0')}_${t.toFixed(1)}s.jpg`;
+        await fetch('http://localhost:8081/save-frame', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ filename, time: t, image: dataUrl })
+        });
+      }
+
+      status.textContent = 'DONE_ALL_FRAMES';
+      console.log('EXTRACTION_COMPLETE');
+    });
+
+    function seekTo(time) {
+      return new Promise((resolve) => {
+        const onSeeked = () => {
+          vid.removeEventListener('seeked', onSeeked);
+          resolve();
+        };
+        vid.addEventListener('seeked', onSeeked);
+        vid.currentTime = time;
+      });
+    }
+  </script>
+</body>
+</html>
+

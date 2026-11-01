@@ -1,0 +1,6 @@
+# Large raw video exceeding GitHub 100MB file limit
+public/medore-banner-video.mp4
+
+# OS & Temp
+.DS_Store
+Thumbs.db

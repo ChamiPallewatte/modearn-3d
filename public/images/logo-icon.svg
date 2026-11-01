@@ -1,0 +1,12 @@
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280.4 204.5">
+  <defs>
+    <linearGradient id="medore-gold-icon" x1="150.9" y1="-.2" x2="150.9" y2="115.3" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fcdc07"/>
+      <stop offset=".2" stop-color="#f8b616"/>
+      <stop offset=".4" stop-color="#f48a28"/>
+      <stop offset=".5" stop-color="#f17033"/>
+      <stop offset=".6" stop-color="#f16638"/>
+    </linearGradient>
+  </defs>
+  <polygon fill="url(#medore-gold-icon)" points="96.4 117.1 115.6 117.1 151.1 39.6 186.1 117.1 205.4 117.1 150.9 0 96.4 117.1"/>
+</svg>
